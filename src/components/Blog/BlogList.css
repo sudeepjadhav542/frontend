@@ -1,0 +1,135 @@
+/* Base styles */
+.blog-list {
+  display: flex; /* Enable flexbox */
+  flex-wrap: wrap; /* Allow items to wrap onto new lines */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  justify-content: space-between; /* Add some space between items */
+}
+
+.blog-card {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  flex: 1 1 calc(33.333% - 20px); /* Allow cards to grow and shrink, taking up roughly a third of the space */
+  min-width: 250px; /* Minimum width of a card */
+  margin-right: 20px; /* Space between cards */
+}
+
+.blog-card:last-child {
+  margin-right: 0; /* Remove margin from the last card in a row */
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.blog-card-summary {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-card-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.read-more-link {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.read-more-link:hover {
+  background: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .blog-list {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .blog-card-title {
+    font-size: 20px;
+  }
+
+  .blog-card-summary {
+    font-size: 14px;
+  }
+
+  .blog-card-date {
+    font-size: 12px;
+  }
+
+  .read-more-link {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  /* BlogList.css */
+  .blog-card-image, .blog-image {
+    width: 100%;
+    height: auto; /* Ensures aspect ratio is maintained */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    display: block;
+    object-fit: cover; /* Ensures images are properly fitted */
+  }
+  
+  /* Ensure images scale well on smaller screens */
+  @media (max-width: 768px) {
+    .blog-card-image, .blog-image {
+      height: auto; /* Adjusts height dynamically */
+      max-width: 100%;
+    }
+  }
+  
+
+/* BlogDetails.css */
+
+}
+
+@media (max-width: 480px) {
+  .blog-list {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  .blog-card-title {
+    font-size: 18px;
+  }
+
+  .blog-card-summary {
+    font-size: 12px;
+  }
+
+  .blog-card-date {
+    font-size: 10px;
+  }
+
+  .read-more-link {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

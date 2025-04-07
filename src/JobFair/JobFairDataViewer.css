@@ -1,0 +1,56 @@
+.data-viewer {
+  width: 100%; /* Full width */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333; /* Dark text color */
+}
+
+.job-fair-table {
+  width: 100%; /* Full width */
+  border-collapse: collapse;
+  margin-bottom: 20px; /* Space below the table */
+}
+
+.table-header {
+  background-color: #c303b6; /* Blue background */
+  color: white;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+.table-cell {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-cell:last-child {
+  border-right: 1px solid #ddd; /* Add a right border to the last cell */
+}
+
+.resume-link {
+  color: #c303b6;
+  text-decoration: none;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

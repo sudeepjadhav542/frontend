@@ -1,0 +1,114 @@
+/* Base styles */
+.blog-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.blog-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+/* BlogList.css */
+.blog-card-image, .blog-image {
+  width: 100%;
+  height: auto; /* Ensures aspect ratio is maintained */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  display: block;
+  object-fit: cover; /* Ensures images are properly fitted */
+}
+
+/* Ensure images scale well on smaller screens */
+@media (max-width: 768px) {
+  .blog-card-image, .blog-image {
+    height: auto; /* Adjusts height dynamically */
+    max-width: 100%;
+  }
+}
+
+
+.blog-author {
+  color: #c303b6;
+  font-weight: bold;
+}
+
+.blog-article {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-article p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .blog-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .blog-title {
+    font-size: 24px;
+  }
+
+  .blog-article h2 {
+    font-size: 20px;
+  }
+
+  .blog-meta {
+    font-size: 12px;
+  }
+
+  .blog-article p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  .blog-title {
+    font-size: 20px;
+  }
+
+  .blog-article h2 {
+    font-size: 18px;
+  }
+
+  .blog-meta {
+    font-size: 10px;
+  }
+
+  .blog-article p {
+    font-size: 12px;
+  }
+}

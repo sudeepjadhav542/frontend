@@ -1,0 +1,53 @@
+/* Add this to your CSS file */
+.latest-jobs-container {
+  width: auto;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.job-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-job-button {
+  background-color: #c300af; /* Corrected the color code */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px; /* Simplified syntax */
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.view-job-button:hover {
+  background-color: #b300b3;
+}
+
+.view-job-button:active {
+  transform: translateY(2px); /* Slightly lower the button on click */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+.job-criteria {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.criteria-item {
+  text-align: center;
+}

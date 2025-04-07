@@ -1,0 +1,24 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /user-login/
+Disallow: /shop/
+Disallow: /career/
+Disallow: /category/interview/
+Disallow: /testimonials/
+Disallow: /product/job-package/
+Disallow: /post-a-new-job/
+Disallow: /2022-2/
+Disallow: /training/
+Disallow: /jobs-2/
+Disallow: /*?_gl=
+Disallow: /*?_ga=
+Disallow: /*?_bdsid=
+Disallow: /detail.php
+Disallow: /*?feed=
+Disallow: /*?job_
+Disallow: /*?skill_
+Disallow: /*?sh_atts=
+
+Allow: /blog/
+Sitemap: https://mailerjobs.com/sitemap.xml
